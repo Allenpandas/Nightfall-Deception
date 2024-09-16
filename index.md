@@ -6,7 +6,7 @@ title: Nightfall Deception$:$ A Novel Backdoor Attack on Traffic Sign Recognitio
 authors:
     Yalun Wu$^{1,2}$, Qiong Li$^{1,2}$, Yingxiao Xiang$^{3}$, Jinkai Zheng$^{4}$, Xingyu Wu$^{1,2}$, Zhen Han$^{1,2}$, <br/> Jiqiang Liu$^{1,2}$, Wenjia Niu$^{1,2,*}$
 affiliations:
-    $^1$Beijing Key Laboratory of Security and Privacy in Intelligent Transportation,<br/> Beijing Jiaotong University
+    $^1$Beijing Key Laboratory of Security and Privacy in Intelligent Transportation,<br/> Beijing Jiaotong University<br/>
     $^2$School of Cyberspace Science and Techonology, Beijing Jiaotong University<br/>
     $^3$Institute of Information Engineering, Chinese Academy of Sciences<br/>
     $^4$School of Cyber Science and Engineering, Xi’an Jiaotong University
@@ -17,14 +17,16 @@ data: https://huggingface.co/docs/datasets
 ---
 
 <!-- Using HTML to center the abstract -->
+
 <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
         <h2>Abstract</h2>
         <div class="content has-text-justified">
-Backdoor attacks on traffic sign recognition are under intense investigation due to their profound security implications for intelligent driving. Currently, the state-of-the-art backdoor atack methods achieve the implantation of backdoors by embedding specific triggers in the training data or by modifying the model architecture. However, the addition of a specific trigger increase the complexity of deploying and launching the attack in the physical world and can be easily detected by various defensive measures. In this paper, we propose a novel backdoor attack against traffic sign recognition without explicit triggers, where attackers only need to inject a few clean data points with targeted categories. Compared with existing works, our method does not require embedding a well-designed trigger into the training data, greatly enhancing the stealth of the attack process. Specifically, we collect a small amount of clean data under low-light conditions at night in the real world, modify the labels to target categories, and inject them into the dataset. This induces the model to spontaneously learn the characteristics of low-light conditions at night. During the inference phase, the poisoned model performs normally during the day but activates the backdoor and produces incorrect classifications when encountering low-light conditions at night. We conduct extensive experiments on different model architectures, demonstrating that our proposed method is effective and stealthy
+Backdoor attacks on traffic sign recognition are under intense investigation due to their profound security implications for intelligent driving. Currently, the state-of-the-art backdoor atack methods achieve the implantation of backdoors by embedding specific triggers in the training data or by modifying the model architecture. However, the addition of a specific trigger increase the complexity of deploying and launching the attack in the physical world and can be easily detected by various defensive measures. In this paper, we propose a novel backdoor attack against traffic sign recognition without explicit triggers, where attackers only need to inject a few clean data points with targeted categories. Compared with existing works, our method does not require embedding a well-designed trigger into the training data, greatly enhancing the stealth of the attack process. Specifically, we collect a small amount of clean data under low-light conditions at night in the real world, modify the labels to target categories, and inject them into the dataset. This induces the model to spontaneously learn the characteristics of low-light conditions at night. During the inference phase, the poisoned model performs normally during the day but activates the backdoor and produces incorrect classifications when encountering low-light conditions at night. We conduct extensive experiments on different model architectures, demonstrating that our proposed method is effective and stealthy.
         </div>
     </div>
 </div>
+
 
 
 ---
@@ -65,13 +67,11 @@ Turing's paper laid the foundation for the theory of computation and had a profo
 
 ## Citation
 ```
-@article{turing1936computable,
-  title={On computable numbers, with an application to the Entscheidungsproblem},
-  author={Turing, Alan Mathison},
-  journal={Journal of Mathematics},
-  volume={58},
-  number={345-363},
-  pages={5},
-  year={1936}
+@inproceedings{wu2024nightfall,
+  title={Nightfall Deception$:$ A Novel Backdoor Attack on Traffic Sign Recognition Models via Low-Light Data Manipulation},
+  author={Wu, Yalun and Li, Qiong and Xiang, Yingxiao and Zheng, Jinkai and Wu, Xingyu and Han, Zhen and Liu, Jiqiang and Niu, Wenjia},
+  booktitle={International Conference on Advanced Data Mining and Applications},
+  year={2024},
+  organization={Springer}
 }
 ```
